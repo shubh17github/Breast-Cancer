@@ -1,0 +1,54 @@
+<html>
+    <h1>*******WELCOME******</h1>
+    <head>
+    <body>
+        <form action="/predict" method="POST">
+            <h1>input data for Breast Cancer detection Prediction</h1>
+            <label> GENDER(male:1,Female:0)</label><input type="text" name="gender"> <br><br>
+            <label> AGE(value in Float)</label><input name="age" type="text"> <br><br>
+            <label> HYPERTENSION(yes:1,no:0)</label><input name="hypertension" type="text"> <br><br>
+            <label> HEART DISEASE(yes:1,no:0)</label><input name="heart_disease" type="text"> <br><br>
+            <label> MARRIED STATUS(yes:1,no:0)</label><input name="ever_married" type="text"> <br><br>
+            <label> WORK TYPE('Private' 'Self-employed' 'Govt_job' 'children')</label><input name="work_type" type="text"> <br><br>
+            <label> RESIDENCE TYPE(Urban:1,Rural:0)</label><input name="Residence_type" type="text"> <br><br>
+            <label> AVG GLUCOSE LEVEL(value in Float)</label><input name="avg_glucose_level" type="text"> <br><br>
+            <label> BMI(value in Float)</label><input name="bmi" type="text">
+            <label> SMOKING STATUS('formerly smoked':3 'never smoked':0 'smokes':1 'Unknown':2)</label><input name="smoking_status" type="text"> <br><br>
+            <input type="submit" value="PREDICT"> <br><br>
+
+
+        </form>
+        <h1>Prediction for given data is on below side(Yes:1 And No:0)</h1>
+        {{pred}}
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+    </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
